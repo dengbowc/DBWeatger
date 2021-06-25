@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'DBWeatherSDK_Example' do
+  pod 'DBWeatherSDK', :path => '../'
+
+  target 'DBWeatherSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
