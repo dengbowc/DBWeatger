@@ -1,0 +1,22 @@
+{
+  "name": "DBWeatherSDK",
+  "version": "0.1.0",
+  "summary": "A short description of DBWeatherSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/dengbowc/DBWeatherSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "dengbowc": "dengbo.db@alibaba-inc.com"
+  },
+  "source": {
+    "git": "https://github.com/dengbowc/DBWeatherSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "DBWeatherSDK/Classes/**/*"
+}

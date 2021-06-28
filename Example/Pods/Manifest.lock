@@ -1,0 +1,16 @@
+PODS:
+  - DBWeatherSDK (0.1.0)
+
+DEPENDENCIES:
+  - DBWeatherSDK (from `../`)
+
+EXTERNAL SOURCES:
+  DBWeatherSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DBWeatherSDK: bed00a36580a55394d65a13057a01e2bebb3a656
+
+PODFILE CHECKSUM: 98d6ab8ad428933072bc4d77991b481c8a66bc77
+
+COCOAPODS: 1.7.5.3

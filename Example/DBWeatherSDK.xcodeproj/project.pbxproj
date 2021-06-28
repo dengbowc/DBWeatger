@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		AF5D47A8B493B4E62BC707AD /* Pods_DBWeatherSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C47E261F840596BDF396F31 /* Pods_DBWeatherSDK_Example.framework */; };
+		B8A151CC2689C10B00A7C920 /* DBWeatherPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A151CB2689C10B00A7C920 /* DBWeatherPanelView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +64,12 @@
 		8DC52935788F7BF6DE17633E /* Pods-DBWeatherSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBWeatherSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-DBWeatherSDK_Example/Pods-DBWeatherSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9717649E902354A67CB3B777 /* Pods_DBWeatherSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBWeatherSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A652A4DC37A6FCA784DDCCD /* Pods-DBWeatherSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBWeatherSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DBWeatherSDK_Tests/Pods-DBWeatherSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BF4564BE2116F6584E258D15 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C88E0E0CA335295D02A16C0F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B8A151CA2689C10B00A7C920 /* DBWeatherPanelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBWeatherPanelView.h; sourceTree = "<group>"; };
+		B8A151CB2689C10B00A7C920 /* DBWeatherPanelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBWeatherPanelView.m; sourceTree = "<group>"; };
+		BF4564BE2116F6584E258D15 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C88E0E0CA335295D02A16C0F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EF56BF0DF8039E7A4D21C914 /* Pods-DBWeatherSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBWeatherSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-DBWeatherSDK_Tests/Pods-DBWeatherSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F1DA0D8410C53DC8AB1AFB09 /* DBWeatherSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DBWeatherSDK.podspec; path = ../DBWeatherSDK.podspec; sourceTree = "<group>"; };
+		F1DA0D8410C53DC8AB1AFB09 /* DBWeatherSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DBWeatherSDK.podspec; path = ../DBWeatherSDK.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +106,6 @@
 				9A652A4DC37A6FCA784DDCCD /* Pods-DBWeatherSDK_Tests.debug.xcconfig */,
 				EF56BF0DF8039E7A4D21C914 /* Pods-DBWeatherSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,6 +152,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* DBViewController.h */,
 				6003F5A6195388D20070C39A /* DBViewController.m */,
+				B8A151CA2689C10B00A7C920 /* DBWeatherPanelView.h */,
+				B8A151CB2689C10B00A7C920 /* DBWeatherPanelView.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -260,6 +264,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = dengbowc;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = Y8MMRQ4MZ4;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -270,6 +277,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -376,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A151CC2689C10B00A7C920 /* DBWeatherPanelView.m in Sources */,
 				6003F59E195388D20070C39A /* DBAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* DBViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -506,11 +515,12 @@
 			baseConfigurationReference = 8DC52935788F7BF6DE17633E /* Pods-DBWeatherSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y8MMRQ4MZ4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBWeatherSDK/DBWeatherSDK-Prefix.pch";
 				INFOPLIST_FILE = "DBWeatherSDK/DBWeatherSDK-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dengbo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -522,11 +532,12 @@
 			baseConfigurationReference = 00EEE1863B6E1527F452C1FC /* Pods-DBWeatherSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y8MMRQ4MZ4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBWeatherSDK/DBWeatherSDK-Prefix.pch";
 				INFOPLIST_FILE = "DBWeatherSDK/DBWeatherSDK-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dengbo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;

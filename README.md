@@ -1,15 +1,26 @@
 # DBWeatherSDK
 
-[![CI Status](https://img.shields.io/travis/dengbowc/DBWeatherSDK.svg?style=flat)](https://travis-ci.org/dengbowc/DBWeatherSDK)
-[![Version](https://img.shields.io/cocoapods/v/DBWeatherSDK.svg?style=flat)](https://cocoapods.org/pods/DBWeatherSDK)
-[![License](https://img.shields.io/cocoapods/l/DBWeatherSDK.svg?style=flat)](https://cocoapods.org/pods/DBWeatherSDK)
-[![Platform](https://img.shields.io/cocoapods/p/DBWeatherSDK.svg?style=flat)](https://cocoapods.org/pods/DBWeatherSDK)
+## Summary
+I made this SDK and test example project via cocoapods directly.See details below.
+
+## API Description
+
+###Public headers
+####DBWeatherManager
+Two interfaces are provided, one is used to obtain the weather directly (- getWeatherOfCurrentLocation), and the other is based on zipcode (- getWeatherWithZipcode:).Handle the result to callers using delegate pattern.
+
+####DBWeatherModel
+A datastructure describe the weather,include temperature(both Kelvin and Celsius) and city,date informations.
+
+## Patterns Usage
+Delegate Sington MVC
+
+## Package and Distribution
+
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+Run the example project, you can see two buttons on the home screen that will trigger the two weather api in DBWeatherManager,get weather model and show in a panel view.
 
 ## Installation
 
@@ -22,7 +33,7 @@ pod 'DBWeatherSDK'
 
 ## Author
 
-dengbowc, dengbo.db@alibaba-inc.com
+dengbowc, dengbowc@gmail.com
 
 ## License
 
