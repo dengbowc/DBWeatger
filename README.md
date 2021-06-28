@@ -5,13 +5,13 @@ I made this SDK and test example project via cocoapods directly.See details belo
 
 ## API Description
 
-###Public headers
+### Public headers
 
-####DBWeatherManager
+#### DBWeatherManager
 
 Two interfaces are provided, one is used to obtain the weather directly (- getWeatherOfCurrentLocation), and the other is based on zipcode (- getWeatherWithZipcode:).Handle the result to callers using delegate pattern.
 
-####DBWeatherModel
+#### DBWeatherModel
 
 A datastructure describe the weather,include temperature(both Kelvin and Celsius) and city,date informations.
 
