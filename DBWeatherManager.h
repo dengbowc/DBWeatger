@@ -12,7 +12,7 @@ typedef NS_ENUM(NSUInteger, DBWeatherError) {
     DBWeatherNetworkError,
     DBWeatherJsonParseError,
     DBWeatherLocationError,
-    DBWeatherJsonUnknownError
+    DBWeatherUnknownError
 };
 
 @class DBWeatherModel;

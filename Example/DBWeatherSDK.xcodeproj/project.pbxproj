@@ -69,7 +69,7 @@
 		BF4564BE2116F6584E258D15 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C88E0E0CA335295D02A16C0F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EF56BF0DF8039E7A4D21C914 /* Pods-DBWeatherSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBWeatherSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-DBWeatherSDK_Tests/Pods-DBWeatherSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F1DA0D8410C53DC8AB1AFB09 /* DBWeatherSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DBWeatherSDK.podspec; path = ../DBWeatherSDK.podspec; sourceTree = "<group>"; };
+		F1DA0D8410C53DC8AB1AFB09 /* DBWeatherSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DBWeatherSDK.podspec; path = ../DBWeatherSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
