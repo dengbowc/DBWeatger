@@ -9,7 +9,7 @@ I made this SDK and test example project via cocoapods directly.See details belo
 
 #### DBWeatherManager
 
-Two interfaces are provided, one is used to obtain the weather directly (- getWeatherOfCurrentLocation), and the other is based on zipcode (- getWeatherWithZipcode:).Handle the result to callers using delegate pattern.
+Two interfaces are provided, one is used to obtain the weather directly (- getWeatherOfCurrentLocation), and the other one is based on zipcode (- getWeatherWithZipcode:).Handle the result or error to caller using delegate pattern.
 
 #### DBWeatherModel
 
@@ -19,7 +19,7 @@ A datastructure describe the weather,include temperature(both Kelvin and Celsius
 Delegate Sington MVC
 
 ## Package and Distribution
-
+Cocoapods,podspec link:https://github.com/CocoaPods/Specs/commit/caa6411760ff723449ccd504b3b7aee286c8873d
 
 ## Example
 
